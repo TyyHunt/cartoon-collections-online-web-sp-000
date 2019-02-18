@@ -17,13 +17,10 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_the_cheese(foods)
+  i = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if foods.include?(cheese_types)
-    foods.detect do |food|
-      food.is_a?(cheese_types)
-      puts "#{food}"
-    end
-  else
-    return nil
+  while i < foods.length
+    return cheese_types[i] if foods.include?(cheese_types[i])
+    i += 1
   end
 end
