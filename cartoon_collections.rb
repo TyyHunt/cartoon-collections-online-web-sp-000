@@ -1,6 +1,6 @@
 def roll_call_dwarves(dwarves)
   i = 0
-  while i < dwarves.length 
+  while i < dwarves.length
     puts dwarves[i]
     i += 1
   end
